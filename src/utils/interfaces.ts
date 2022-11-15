@@ -1,3 +1,6 @@
+export interface IPesquisarUsuario{
+    cpf: string
+}
 export interface INovoUsuario {
     nome: string,
     cpf: string,

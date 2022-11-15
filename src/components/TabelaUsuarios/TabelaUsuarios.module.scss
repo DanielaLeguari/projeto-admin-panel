@@ -1,0 +1,22 @@
+.containerTabela {
+    border: 1px solid red;
+    border-radius: 12px;
+
+    .containerlinhaTabela {
+        display: flex;
+        justify-content: space-between;
+        width: 97%;
+        margin: 0 auto;
+
+        h2 {
+            text-transform: initial;
+            font-weight: 600;
+            font-size: 1.3125rem;
+        }
+
+    }
+
+
+
+
+}

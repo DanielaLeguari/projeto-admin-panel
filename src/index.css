@@ -6,3 +6,11 @@
   margin : 0;
   padding: 0;
 }
+
+:root{
+  --cor-menu-lateral: #2A3042;
+  --cor-fundo-branco: #E5E5E5;
+  --cor-botao: #007BFF;  
+  --cor-fonte: #FFFFFF; 
+  --cor-fonte-menu: #C3C0C0;
+}

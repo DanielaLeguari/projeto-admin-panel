@@ -1,0 +1,39 @@
+.container {
+    background-color: var(--cor-menu-lateral);
+    width: 17.9375rem;
+    height: 100vh;
+    color: var(--cor-fonte);
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+
+    .cabecalho {
+        font-size: 0.75rem;
+    }
+
+    .menu {
+        margin: 0 auto;
+        text-align: left;
+        color: var(--cor-fonte-menu);
+
+        h2 {
+            font-size: 0.9rem;
+        }
+
+        span {
+            color: var(--cor-fonte-menu);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+
+    .links {
+        color: var(--cor-fonte-menu);
+        font-size: 0.875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
