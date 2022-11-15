@@ -31,7 +31,7 @@ const Tabela = ({ cabecalho, dados, exibeAddUsuario }: TabelaProps) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {dados !== undefined && dados.length === 0 ? <tr><td colSpan={9}>Nenhum resultado encontrado</td></tr> :
+                    {dados === undefined || dados.length === 0 ? <tr><td colSpan={9}>Nenhum resultado encontrado</td></tr> :
                         dados.map(usuario => {
                             return <tr >
                                 <td>{usuario.nome}</td>
