@@ -7,4 +7,4 @@ export const toastConfig: object = {
     draggable: true,
     progress: undefined,
     theme: "light",
-    }
+}
