@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 import { toastConfig } from '../../utils/toast';
 import MenuLateral from '../../components/MenuLateral';
 import Conteudo from '../../components/Conteudo';
+import styles from './Usuario.module.scss';
 
 export const Usuario = () => {
     const navigate = useNavigate();
@@ -64,7 +65,8 @@ export const Usuario = () => {
         <>
             <MenuLateral />
             <Conteudo>
-                <h2>Lista de Usuários</h2>
+                <div className={styles.containerForm}>
+                <h2>{!edicao ? 'Adicionar Usuário' : 'Editar Usuário'}</h2>
 
                 <form onSubmit={handleSubmit(processaForm)}>
                     <label htmlFor="nome">Nome Completo</label>
@@ -93,8 +95,9 @@ export const Usuario = () => {
                         <option value="F">Feminino</option>
                         <option value="M">Masculino</option>
                     </select>
-                    <input type="submit" value={!edicao ? 'Adicionar Usuário' : 'Editar Usuário'} />
+                    <input className={styles.btnEditarUsuario} type="submit" value={!edicao ? 'Adicionar Usuário' : 'Editar Usuário'} />
                 </form>
+                </div>
             </Conteudo>
         </>
     )

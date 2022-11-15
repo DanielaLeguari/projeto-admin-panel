@@ -1,6 +1,24 @@
 .containerTabela {
-    border: 1px solid red;
+    margin-top: 1rem;
     border-radius: 12px;
+    width: 100%;
+
+    table{
+        margin-top: 0.1rem;
+        width: 100%;
+        border-collapse: collapse;
+
+        tr{
+            font-size: 0.9rem;
+        }
+    }
+.acoes{
+    display: flex;
+    justify-content: center;
+    .btnUsuario{
+        margin: 0.1rem;
+    }
+}
 
     .containerlinhaTabela {
         display: flex;
@@ -14,6 +32,29 @@
             font-size: 1.3125rem;
         }
 
+    }
+
+    .tabelaHeader {
+        background-color: var(--cor-menu-lateral);
+        border: none;
+        color: var(--cor-fonte);
+        font-weight: 500;
+        font-size: 0.8rem;
+        line-height: 2rem;
+
+    }
+
+    .btnUsuario {
+        background-color: var(--cor-botao);
+        color: var(--cor-fonte);
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .btnUsuario:hover {
+        background-color: rgb(40, 40, 186);
     }
 
 

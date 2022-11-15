@@ -1,0 +1,58 @@
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+   
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 8px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+      
+       
+
+        label{
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color:var(--cor-label-form);
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        input, select{
+            border-radius: 8px;
+            border:1px solid rgb(184, 179, 179);
+            padding: 0.5rem;
+        }
+        select{
+            margin-bottom: 1rem;
+        }
+
+        input:focus, select:focus {
+            outline: none !important;
+            border:2px solid var(--cor-label-form); 
+        }
+
+        .btnEditarUsuario{
+            background-color: var(--cor-botao);
+            border: none;
+            color:var(--cor-fonte);
+            font-weight: 600;
+            font-size: 0.875rem;
+            padding: 0.8rem;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .btnEditarUsuario:hover{
+            background-color: rgb(40, 40, 186);
+        }
+        
+    }
+
+}

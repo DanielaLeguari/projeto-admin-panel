@@ -28,7 +28,7 @@ export const Home = () => {
             <MenuLateral />
             <Conteudo>
                 <h2>Lista de Usuários</h2>
-                <Tabela cabecalho={cabecalho} dados={usuarios} />
+                <Tabela exibeAddUsuario={true} cabecalho={cabecalho} dados={usuarios} />
             </Conteudo>
 
         </main>

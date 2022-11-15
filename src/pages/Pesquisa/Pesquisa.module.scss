@@ -1,0 +1,45 @@
+ .titulo {
+     font-weight: 500;
+     font-size: 1.375rem;
+ }
+
+ form {
+
+
+     label {
+         color: var(--cor-label-form);
+         font-weight: 600;
+         font-size: 0.75rem;
+         margin-right: 0.5rem;
+     }
+
+     input {
+         border-radius: 8px;
+         border: 1px solid rgb(184, 179, 179);
+         padding: 0.5rem;
+         margin-right: 0.5rem;
+     }
+
+     input:focus {
+         outline: none !important;
+         border: 2px solid var(--cor-label-form);
+     }
+
+     .btnEncontrar {
+         background-color: var(--cor-botao);
+         border: none;
+         color: var(--cor-fonte);
+         font-weight: 600;
+         font-size: 0.875rem;
+         padding: 0.6rem;
+         margin: 0 auto;
+         cursor: pointer;
+     }
+
+     .btnEncontrar:hover {
+         background-color: rgb(40, 40, 186);
+     }
+
+
+
+ }
