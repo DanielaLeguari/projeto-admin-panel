@@ -8,30 +8,30 @@ Requisitos técnicos:
 -  toast (React Toastify, React Hot Toast, Sweet Alert2 ou outras);
 -  loading (nprogress ou outras - também pode criar componente personalizado).
 
-## Para iniciar o projeto  você precisa dos comandos:
+## Para iniciar o projeto você precisará dos comandos:
 
 ### `npm install`
 
 ### `npm start`
 
 
-# Pagina Lista de Usuários
+# Página Lista de Usuários
 
 
  ![](/imagens/listaUsuario.png)
 
 
- # Pagina Adicionar Usuário
+ # Página Adicionar Usuário
 
 
  ![](/imagens/addUsuario.png)
 
- # Pagina Editar Usuário
+ # Página Editar Usuário
 
 
  ![](/imagens/editarUsuario.png)
 
- # Pagina Pesquisar Usuário
+ # Página Pesquisar Usuário
 
 
  ![](/imagens/pesquisar.png)
