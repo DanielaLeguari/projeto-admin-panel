@@ -18,7 +18,9 @@ export const Pesquisa = () => {
 
     const carregaUsuario = async (cpf: string) => {
         let u = await pesquisarUsuario(cpf);
-        setUsuarios([u]);
+        if (u) {
+            setUsuarios([u]); //adiciona o usuario apenas de não for nulo ou undefined
+        }
 
         if (!u) {
             toast.error("Usuário não encontrado.", toastConfig);
@@ -27,7 +29,12 @@ export const Pesquisa = () => {
 
     //pesquisar por cpf
     const processaForm = async (data: IPesquisarUsuario) => {
-        await carregaUsuario(data.cpf);
+        if(data !== undefined && data.cpf){
+           await carregaUsuario(data.cpf); 
+        } else {
+            toast.error('Informe um CPF.', toastConfig);
+        }
+        
     }
 
     return (
