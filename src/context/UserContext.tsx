@@ -67,18 +67,18 @@ export const UserProvider = ({ children }: IChildren) => {
         }
     }
 
-    const pesquisarUsuario = async (cpf: string) => {
+    const pesquisarUsuario = async (cpf: string) : Promise<INovoUsuario | undefined> => {
         try {
             nProgress.start();
             const response = await api.get(`/dados-pessoais/${cpf}`);
             nProgress.done();
             return response.data;
-
         } catch (error) {
-            
+    
         } finally {
             nProgress.done();
         }
+        return;
     }
 
     return (
